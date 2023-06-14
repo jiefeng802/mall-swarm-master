@@ -48,7 +48,7 @@ services:
       - "discovery.type=single-node" #以单一节点模式启动
       - "ES_JAVA_OPTS=-Xms512m -Xmx1024m" #设置使用jvm内存大小
     volumes:
-      - D:\BackEndProject\mall-swarm-master\document\docker\mydata\elasticsearch\plugins:/usr/share/elasticsearch/plugins #插件文件挂载
+      - /d/BackEndProject/mall-swarm-master/document/docker/mydata/elasticsearch/plugins/a:/usr/share/elasticsearch/plugins/a #插件文件挂载
       - D:\BackEndProject\mall-swarm-master\document\docker\mydata\elasticsearch\data:/usr/share/elasticsearch/data #数据文件挂载
     ports:
       - 9200:9200
